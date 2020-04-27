@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>type-navegador</title>
+</head>
+<body>
+	<label>
+		agent - navegador
+	</label>
+	<input type="text" name="navType" id="navAgent" width="100%" /><br>
+	<label>
+		vendor - navegador
+	</label>
+	<input type="text" name="navVendor" id="navVendor" width="100%" /><br>
+	<label>
+		platform - navegador
+	</label>
+	<input type="text" name="navPlat" id="navPlat" width="100%" />
+</body>
+<script type="text/javascript">
+	document.getElementById("navAgent").value= navigator.userAgent;
+	document.getElementById("navVendor").value= navigator.vendor;
+	document.getElementById("navPlat").value= navigator.platform;
+</script>
+</html>
